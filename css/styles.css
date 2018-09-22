@@ -1,3 +1,242 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,300,400");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  transition: 0.6s; }
 
+body {
+  min-width: 800px;
+  max-width: 800px;
+  margin: auto;
+  font-family: "Fira Sans Extra Condensed", sans-serif; }
+
+header {
+  background: #FFF3F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; }
+  header a:hover {
+    filter: invert(100%); }
+
+nav {
+  background: #8E1616;
+  padding-left: 15px; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  nav li {
+    display: inline-flex; }
+    nav li a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: 300;
+      padding: 3px 5px; }
+      nav li a:hover {
+        background: #8dd2d4; }
+
+main {
+  position: relative;
+  align-items: center; }
+
+#hero {
+  background: url("../img/traffic-332857_1920.jpg");
+  background-size: cover;
+  background-color: grey;
+  height: 450px;
+  padding: 35px 30px;
+  font-size: 36px;
+  color: white; }
+
+#quote_calc {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  top: 95px;
+  left: 49px;
+  width: 650px;
+  border: 2px solid #57585A;
+  border-radius: 2px;
+  padding: 20px;
+  height: 420px;
+  text-align: center;
+  border-radius: 30px; }
+
+.hl {
+  font-size: 42px; }
+
+form {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  form input {
+    width: 200px;
+    height: 35px;
+    font-size: 30px;
+    text-align: center;
+    text-align-last: center;
+    background: rgba(255, 255, 255, 0.8); }
+    form input:enabled:hover {
+      background: rgba(141, 210, 212, 0.2); }
+    form input:enabled:focus {
+      background: rgba(141, 210, 212, 0.75); }
+    form input:disabled:hover {
+      cursor: not-allowed; }
+  form select {
+    width: 200px;
+    height: 35px;
+    font-size: 30px;
+    text-align: center;
+    text-align-last: center;
+    background: rgba(255, 255, 255, 0.8); }
+    form select:enabled:hover {
+      background: rgba(141, 210, 212, 0.2); }
+    form select:enabled:focus {
+      background: rgba(141, 210, 212, 0.75); }
+    form select:disabled:hover {
+      cursor: not-allowed; }
+  form p {
+    margin: 10px 20px; }
+
+#calc {
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  background: #339235;
+  border: 2px solid #339235;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none; }
+  #calc span {
+    color: white;
+    font-size: 32px;
+    position: relative;
+    display: inline-block; }
+    #calc span:after {
+      content: "»";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -25px; }
+
+#calc.disabled {
+  text-shadow: 0 0 0px black; }
+  #calc.disabled span {
+    color: #A1A1A1; }
+  #calc.disabled:hover {
+    cursor: not-allowed; }
+
+#calc.enabled:hover {
+  cursor: pointer; }
+
+#calc.enabled:hover span {
+  padding-right: 40px; }
+  #calc.enabled:hover span:after {
+    opacity: 1;
+    right: 0; }
+
+#calc.enabled:active {
+  background: white; }
+  #calc.enabled:active span {
+    color: #339235; }
+
+#result {
+  font-size: 32px; }
+
+.result, .red, .green {
+  padding: 0 15px;
+  border-radius: 15px;
+  background: rgba(141, 210, 212, 0.7);
+  text-shadow: 0 0 2px white; }
+
+.red {
+  color: red; }
+
+.green {
+  color: #339235;
+  display: inline-flex;
+  border: 2px solid lightgrey; }
+
+#main2 {
+  background: #CECECE;
+  padding: 55px 0 20px 0;
+  text-align: center; }
+  #main2 .hl2 {
+    font-weight: 300;
+    font-size: 32px; }
+  #main2 p {
+    font-size: 20px; }
+
+#content_2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 25px; }
+
+.extra {
+  width: 260px;
+  height: 210px;
+  box-shadow: 0px -1px 0 black, 0px 1px 2px 1px lightgray;
+  padding: 35px;
+  font-weight: 200;
+  font-size: 14px; }
+  .extra h1 {
+    font-weight: 200;
+    font-size: 22px; }
+  .extra p {
+    font-weight: 300;
+    font-size: 16px; }
+  .extra ul {
+    list-style-image: url("../img/check_mark_sm.png");
+    margin: 10px 0 15px 25px; }
+    .extra ul li {
+      padding: 5px 0;
+      font-weight: 300;
+      font-size: 16px; }
+  .extra sup {
+    font-weight: 300;
+    font-size: 8px; }
+  .extra .grey {
+    color: #B1B2B4; }
+
+footer {
+  background: #171717;
+  color: white; }
+  footer div:first-child {
+    font-size: 18px;
+    padding: 10px 0 0 15px;
+    text-align: left; }
+  footer div:nth-child(2) {
+    text-align: right;
+    padding: 25px; }
+  footer div:nth-child(3) {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px; }
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+footer li {
+  display: inline-flex; }
+  footer li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 3px 5px; }
+    footer li a:hover {
+      background: #8dd2d4; }
+footer ul li a {
+  font-size: 16px;
+  font-weight: 400; }
+footer ul li a:hover {
+  color: #8dd2d4;
+  background: #171717 !important; }
 
 /*# sourceMappingURL=styles.css.map */

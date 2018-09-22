@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="charset" content="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/quote_calc.js" async defer></script>
+	<title>CodeReview 03</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="insurance CF">
+		<a href="https://www.codefactory.wien" title="codefactory.wien">
+			<img src="img/banner.png" alt="codefactory.wien">
+		</a>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#" title="home">Home</a></li>
+			<li><a href="team.html" title="Team">Team</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="hero">
+			Car insurance
+		</div>
+		<div id="quote_calc">
+			<p class="hl">
+				Great coverage begins <br>
+				with a custom quote
+			</p>
+			<form name="insurance" action="calculateInsurance()" accept-charset="utf-8">
+				<p>
+					Your name:<br>
+					<input type="text" name="YourName" id="form_name" disabled>
+				</p>
+				<p>
+					Age:<br>
+					<input type="number" name="age" id="form_age" disabled>
+				</p>
+				<p>
+					Country:<br>
+					<select id="country" name="country" disabled>
+					</select>
+				</p>	
+				<p>
+					Horsepower of car:<br>
+					<input type="number" name="hp" id="form_hp" disabled>
+				</p>	
+			</form>
+			<button id="calc" class="disabled" disabled>
+				<span>
+					Calculate
+				</span>
+			</button>
+			<p id="result" class="red">
+				Please activate javascript to get your quote
+			</p>
+		</div>
+		<div id="main2">
+			<p class="hl2">
+				Un-complicates car coverage
+			</p>
+			<p>
+				Understanding your coverage options shouldn't be so hard.<br>
+				We'll guide you through available coverage types,<br>
+				starting with who and what is covered.
+			</p>			
+		</div>
+	</main>
+	<div id="content_2">
+		<div class="extra">
+			<h1>
+				What comes standard
+			</h1>
+			<p>
+				The coverage you need
+			</p>
+			<ul>
+				<li>Bodily Injury Liability</li>
+				<li>Property Damage</li>
+				<li>Medical Payments</li>
+			</ul>
+			<p>
+				<b>
+					Benefits
+				</b>
+				
+			</p>
+			<p class="grey">
+				12-month rate guarantee &#124; 24/7 customer service &#124; Lifetime Repair Guarantee
+			</p>
+		</div>
+		<div class="extra">
+			<h1>
+				Add-on protection & coverage
+			</h1>
+			<p>
+				For more peace of mind
+			</p>
+			<ul>
+				<li>Better Car Replacement</li>
+				<li>Towing & Labor</li>
+				<li>Rental Car Coverage</li>
+			</ul>
+			<p>
+				<b>Earned Benefits</b>
+			</p>
+			<p class="grey">
+				Accident Forgiveness<sup>1</sup> &#124; New Car Replacement&trade; 
+			</p>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<ul>
+				<li><a href="#" title="home">Home</a></li>
+				<li><a href="team.html" title="Team">Team</a></li>
+			</ul>
+		</div>
+		<div>
+			<img src="img/logo-inv.png" alt="">
+		</div>
+		<div>
+			Mario Weiss - CodeFactory 2018
+		</div>
+	</footer>
+</body>
+</html>

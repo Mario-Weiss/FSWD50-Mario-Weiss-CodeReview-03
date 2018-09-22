@@ -50,4 +50,20 @@
         expect(calculateInsurancePerCountry(100, 20,'Greece'))
             .toBeCloseTo(802.17);
     });
+    //what it should do
+    it("should Return false for 50hp, 50years and 'Austrian'", function() {
+        //expect something
+        expect(calculateInsurancePerCountry(50, 50,'Austrian'))
+            .toEqual(false);
+    });
+        it("should Return false for 100hp, 50years and 'Italy'", function() {
+        //expect something
+        expect(calculateInsurancePerCountry(100, 50,'Italy'))
+            .toEqual(false);
+    });
+        it("should Return false for 100hp, 20years and 'Germany'", function() {
+        //expect something
+        expect(calculateInsurancePerCountry(100, 20,'Germany'))
+            .toEqual(false);
+    });
 });

@@ -11,7 +11,8 @@ body {
   min-width: 800px;
   max-width: 800px;
   margin: auto;
-  font-family: "Fira Sans Extra Condensed", sans-serif; }
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  background: black; }
 
 header {
   background: #FFF3F3;
@@ -175,7 +176,8 @@ form {
 #content_2 {
   display: flex;
   justify-content: space-between;
-  padding: 75px 25px; }
+  padding: 75px 25px;
+  background: white; }
 
 .extra {
   width: 260px;
@@ -202,6 +204,28 @@ form {
     font-size: 8px; }
   .extra .grey {
     color: #B1B2B4; }
+
+#team {
+  background: #CECECE;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #team div h1 {
+    font-size: 38px;
+    padding: 25px; }
+  #team .team {
+    padding: 20px;
+    column-count: 2; }
+  #team img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6; }
+    #team img:hover {
+      opacity: 1; }
+  #team h2 {
+    font-size: 30px; }
 
 footer {
   background: #171717;

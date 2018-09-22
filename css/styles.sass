@@ -45,6 +45,7 @@ body
 	max-width: 800px
 	margin: auto
 	font-family: 'Fira Sans Extra Condensed', sans-serif
+	background: black
 header
 	background: #FFF3F3
 	display: flex
@@ -161,6 +162,7 @@ form
 	display: flex
 	justify-content: space-between
 	padding: 75px 25px
+	background: white
 .extra
 	width: 260px
 	height: 210px
@@ -186,6 +188,27 @@ form
 		font-size: 8px
 	.grey
 		color: #B1B2B4
+#team
+	background: #CECECE
+	align-items: center
+	display: flex
+	flex-direction: column
+	text-align: center
+	div h1
+		font-size: 38px
+		padding: 25px
+	.team
+		padding: 20px
+		column-count: 2
+	img
+		float: left
+		width: 150px
+		height: 150px
+		opacity: 0.6
+		&:hover
+			opacity: 1
+	h2
+		font-size: 30px
 
 
 @import _footer.sass
